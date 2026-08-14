@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENQUIRY</title>
+
+    
+    
+</head>
+<body>
+
+    <nav class="navbar">
+      
+                        <ul>
+                    
+                            <!--these are the navigation bar-->
+                            <li><a href="home">Home</a></li>
+                            <li><a href="ContactUs.html"> Contact Us</a></li>
+                            <li><a href="AboutUs.html">About Us</a></li>
+                            <li><a href="#">Enquiry</a></li>   
+                            <li><a href="Gallery.html">Gallery</a></li>
+                        </ul>
+        </nav>
+
+    
+     <div id="error"></div>
+            <div class="container">
+                <h1> Enquiry</h1>
+                <form  class="row g-3" action="https://formsubmit.co/b850daf1e7ab794d1e0832529ccf1f25" method="POST">
+                    <!-- this is a honeyPot -->
+                    <input type="text" name="_honey" style="display: none;">
+
+                    <!-- disabling of the captcha -->
+                     <input type="hidden" name="_captcha" value="false">
+
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/success2.html">
+
+                    <input id="name" type="text" placeholder="Your Name" name="Name" required>
+                    <input id="email" type="email" placeholder="Your Email" name="Email" required>
+                    <input  id="phoneNumber" type="phoneNumber" placeholder="Your phoneNumber" name="phoneNumber" required>
+                    <input  id="orderID" type="orderID" placeholder="Order ID" name="orderID" required>
+                    <input id="productInterest" type="productInterest" placeholder="Product Interest" name="productInterest" required>
+                    <textarea id="Questions" placeholder="Questions about Product" name="Questions" required></textarea>
+                    <textarea id="message" placeholder="Your Message" name="Message" required></textarea>
+                    <button type="submit"> Submit</button>
+                </form>
+                    
+            </div>
+
+
+</body>
+</html>
