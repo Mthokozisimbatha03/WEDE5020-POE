@@ -5,112 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Sweet Crumbs Bakery in Pretoria offers freshly baked cakes, cupcakes, pastries, bread and customised treats for every occasion."> 
     <meta name="keywords" content="Sweet Crumbs Bakery, bakery Pretoria, cakes Pretoria, cupcakes Pretoria, customised cakes, pastries">
-    <title>Sweet Crumbs Bakery</title>
+    <title>Home - Sweet Crumbs Bakery</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation to make it easier for the next person to browse -->
+
     <header>
         <div class="logo">
             <h1>Sweet Crumbs Bakery</h1>
             <p class="tagline">Lets Enjoy Some Goodies</p>
         </div>
-        <nav>
+        <nav class="navbar">
             <ul>
-                <li><a href="#">Home</a></li>
-                    <li><a href="AboutUs.html">About Us</a></li>
-                    <li><a href="Gallery.html">Gallery</a></li>
-                    <li><a href="Enquiry.html">Enquiry</a></li>
-                    <li><a href="ContactUs.html">Contact Us</a></li>
+                <li><a href="Home.html" class="active">Home</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Enquiry.html">Enquiry</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+
+    <main class="container">
         <section class="hero">
-            <h2> Good Things Come in Crumbs </h2>
-          
-            
-                <img src="gallery/cake (2).jpg" height="640" width="740">
-                <figcaption>Our fleet at Waltloo HQ - 25 vehicles ready for daily dispatch at 06:00</figcaption>
-            
+            <h2>Good Things Come in Crumbs</h2>
+            <figure class="hero-image">
+                <img src="gallery/cake (2).jpg" alt="Fresh Baked Cake Display">
+                <figcaption>Our daily fresh cake selection at our Pretoria HQ</figcaption>
+            </figure>
+        </section>
+
         <section class="stats">
-    <h2>Why Customers Choose Sweet Crumbs</h2>
+            <h2>Why Customers Choose Sweet Crumbs</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>What We Offer</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Freshly Baked</td>
+                        <td>Made Fresh Daily</td>
+                    </tr>
+                    <tr>
+                        <td>Custom Cakes</td>
+                        <td>For Every Occasion</td>
+                    </tr>
+                    <tr>
+                        <td>Products</td>
+                        <td>Cakes, Cupcakes & Pastries</td>
+                    </tr>
+                    <tr>
+                        <td>Customer Service</td>
+                        <td>Friendly & Reliable</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-    <table>
-        <thead>
-            <tr>
-                <th>What We Offer</th>
-                <th>Details</th>
-            </tr>
-        </thead>
-
-        <tbody>
-            <tr>
-                <td>Freshly Baked</td>
-                <td>Made Fresh Daily</td>
-            </tr>
-
-            <tr>
-                <td>Custom Cakes</td>
-                <td>For Every Occasion</td>
-            </tr>
-
-            <tr>
-                <td>Products</td>
-                <td>Cakes, Cupcakes & Pastries</td>
-            </tr>
-
-            <tr>
-                <td>Customer Service</td>
-                <td>Friendly & Reliable</td>
-            </tr>
-        </tbody>
-    </table>
-</section>
         <section class="featured-services">
-    <h2>Our Specialties</h2>
-
-    <div class="service-grid">
-
-        <article>
-            <h3>Custom Cakes</h3>
-            <p>
-                Beautiful customised cakes made for birthdays, weddings,
-                celebrations and other special occasions.
-            </p>
-        </article>
-
-        <article>
-            <h3>Freshly Baked Treats</h3>
-            <p>
-                Enjoy freshly baked cupcakes, pastries, cookies and bread
-                prepared with care and quality ingredients.
-            </p>
-        </article>
-
-        <article>
-            <h3>Party Packs</h3>
-            <p>
-                Choose from a variety of sweet treats and party packs
-                suitable for birthdays, celebrations and special events.
-            </p>
-        </article>
-
-    </div>
-</section>
+            <h2>Our Specialties</h2>
+            <div class="service-grid">
+                <article>
+                    <h3>Custom Cakes</h3>
+                    <p>Beautiful customised cakes made for birthdays, weddings, celebrations and other special occasions.</p>
+                </article>
+                <article>
+                    <h3>Freshly Baked Treats</h3>
+                    <p>Enjoy freshly baked cupcakes, pastries, cookies and bread prepared with care and quality ingredients.</p>
+                </article>
+                <article>
+                    <h3>Party Packs</h3>
+                    <p>Choose from a variety of sweet treats and party packs suitable for birthdays, celebrations and special events.</p>
+                </article>
+            </div>
+        </section>
     </main>
-    <!-- Footer: Secondary navigation, contact summary, copyright -->
+
     <footer>
-       <div class="footer-content">
-    <div class="footer-section">
-        <h3>Sweet Crumbs Bakery</h3>
-        <p>270 Johannes Ramokaose Street, Pretoria Central 0002</p>
-        <p>Freshly baked treats made with love for every occasion.</p>
-    </div>
-</div>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sweet Crumbs Bakery</h3>
+                <p>270 Johannes Ramokhoase Street, Pretoria Central 0002</p>
+                <p>Freshly baked treats made with love for every occasion.</p>
+            </div>
             <div class="footer-section">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="Home.html">Home</a></li>
                     <li><a href="AboutUs.html">About Us</a></li>
                     <li><a href="Gallery.html">Gallery</a></li>
                     <li><a href="Enquiry.html">Enquiry</a></li>
@@ -119,10 +103,11 @@
             </div>
             <div class="footer-section">
                 <h4>Contact</h4>
-                <p>Phone: 012 345 6789 | WhatsApp: 081 07 7380</p>
-                <p>Email Sweet@CrumbsBakery.co.za | mthokozisimbatha39@gmail.com</p>
+                <p>Phone: 012 345 6789 | WhatsApp: 081 307 7380</p>
+                <p>Email: Sweet@CrumbsBakery.co.za | mthokozisimbatha39@gmail.com</p>
             </div>
         </div>
     </footer>
+
 </body>
 </html>

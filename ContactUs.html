@@ -1,80 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Sweet Crumbs Bakery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-        <title>CONTACT</title>
-    </head>
-    <body>
-
-        <!-- this is the header -->
-        <header>
+    <header>
+        <div class="logo">
+            <h1>Sweet Crumbs Bakery</h1>
+            <p class="tagline">Lets Enjoy Some Goodies</p>
+        </div>
         <nav class="navbar">
-      
             <ul>
-        
-                <!--This is the navigation bar-->
-                <li><a href="home.html">Home</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="ContactUs.html" class="active">Contact Us</a></li>
                 <li><a href="AboutUs.html">About Us</a></li>
                 <li><a href="Enquiry.html">Enquiry</a></li>
                 <li><a href="Gallery.html">Gallery</a></li>
-                 
             </ul>
+        </nav>
+    </header>
 
-            
-        </header>    
-
-            <br>
-           
-       
-                
-          
-
-         <!--this is the contact us form-->
-               
-                <div id="error"></div>
-            <div class="container">
-                <h1> Contact Us</h1>
-                <form  class="row g-3" action="https://formsubmit.co/b850daf1e7ab794d1e0832529ccf1f25" method="POST">
-                    <!-- this is a honeyPot -->
+    <main class="container">
+        <h1>Contact Us</h1>
+        
+        <div class="contact-grid">
+            <div class="form-container">
+                <form class="contact-form" action="https://formsubmit.co/b850daf1e7ab794d1e0832529ccf1f25" method="POST">
                     <input type="text" name="_honey" style="display: none;">
-
-                    <!-- disabling of the captcha -->
-                     <input type="hidden" name="_captcha" value="false">
-
+                    <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_next" value="http://127.0.0.1:5500/success.html">
 
-                    <input id="name" type="text" placeholder="Your Name" name="Name" required>
-                    <input id="email" type="email" placeholder="Your Email" name="Email" required>
-                    <textarea id="message" placeholder="Your Message" name="Message" required></textarea>
-                    <button type="submit"> Submit</button>
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input id="name" type="text" placeholder="Your Name" name="Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input id="email" type="email" placeholder="Your Email" name="Email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" placeholder="Your Message" name="Message" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">Submit</button>
                 </form>
-                    
             </div>
 
-           
+            <aside class="contact-info">
+                <h2>Our Details</h2>
+                <address>
+                    <strong>Branch Address:</strong><br>
+                    270 Johannes Ramokhoase Street<br>
+                    Pretoria CBD<br>
+                    0002<br><br>
 
-            <!--This is the contact details-->
-           <address>
-           <b> Branch Address:</b><br>
-            270 Johannes Ramokose Street<br>
-            Pretoria<br>
-           CBD<br>
-           0002<br>
+                    <strong>Contact No:</strong> <a href="tel:0813077380">081 307 7380</a><br>
+                    <strong>Email Address:</strong> <a href="mailto:mthokozisimbatha39@gmail.com">mthokozisimbatha39@gmail.com</a>
+                </address>
+            </aside>
+        </div>
+    </main>
 
-           <b> Contact No:</b> 081 307 7380<br>
-
-        <b> Email Address:</b> mthokozisimbatha39@gmail.com<br>
-
-           </address>
-        </footer>
-
-
-
-      
-           
-
-    </body>
+</body>
 </html>
