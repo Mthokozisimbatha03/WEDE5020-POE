@@ -1,53 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ENQUIRY</title>
 
-    
-    
+    <title>Product Enquiry | Sweet Crumb Bakery</title>
+
+    <meta name="description" content="Send a product enquiry to Sweet Crumb Bakery in Pretoria CBD. Ask us about custom birthday cakes, cupcakes and freshly baked pastries.">
+
+    <meta name="keywords" content="bakery Pretoria, product enquiry, custom cakes, cupcakes, pastries, Sweet Crumb Bakery">
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <nav class="navbar">
-      
-                        <ul>
-                    
-                            <!--these are the navigation bar-->
-                            <li><a href="home">Home</a></li>
-                            <li><a href="ContactUs.html"> Contact Us</a></li>
-                            <li><a href="AboutUs.html">About Us</a></li>
-                            <li><a href="#">Enquiry</a></li>   
-                            <li><a href="Gallery.html">Gallery</a></li>
-                        </ul>
+    <!-- Header Section -->
+    <header>
+
+        <div class="logo">
+            <h1>Sweet Crumb Bakery</h1>
+            <p class="tagline">Let's Enjoy Some Goodies</p>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="Enquiry.html" class="active">Enquiry</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+            </ul>
         </nav>
 
-    
-     <div id="error"></div>
-            <div class="container">
-                <h1> Enquiry</h1>
-                <form  class="row g-3" action="https://formsubmit.co/b850daf1e7ab794d1e0832529ccf1f25" method="POST">
-                    <!-- this is a honeyPot -->
-                    <input type="text" name="_honey" style="display: none;">
+    </header>
 
-                    <!-- disabling of the captcha -->
-                     <input type="hidden" name="_captcha" value="false">
+    <!-- Main Content -->
+    <main class="container">
 
-                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/success2.html">
+        <h1>Product Enquiry</h1>
 
-                    <input id="name" type="text" placeholder="Your Name" name="Name" required>
-                    <input id="email" type="email" placeholder="Your Email" name="Email" required>
-                    <input  id="phoneNumber" type="phoneNumber" placeholder="Your phoneNumber" name="phoneNumber" required>
-                    <input  id="orderID" type="orderID" placeholder="Order ID" name="orderID" required>
-                    <input id="productInterest" type="productInterest" placeholder="Product Interest" name="productInterest" required>
-                    <textarea id="Questions" placeholder="Questions about Product" name="Questions" required></textarea>
-                    <textarea id="message" placeholder="Your Message" name="Message" required></textarea>
-                    <button type="submit"> Submit</button>
-                </form>
-                    
-            </div>
+        <p>
+            Interested in our delicious cakes, cupcakes or pastries?
+            Complete the enquiry form below and let us know what
+            you are looking for. We will get back to you as soon
+            as possible.
+        </p>
 
+        <!-- Google Enquiry Form -->
+        <section class="form-container">
+
+            <h2>Send Us Your Enquiry</h2>
+
+            <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSehknUjJHJS8QBQaAD6zc7qImcZnRYIur763kbxYPyKf78y0w/viewform?embedded=true"
+                width="100%"
+                height="1000"
+                frameborder="0"
+                marginheight="0"
+                marginwidth="0"
+                loading="lazy"
+                title="Sweet Crumb Bakery Product Enquiry Form">
+                Loading…
+            </iframe>
+
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 Sweet Crumb Bakery. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
 
 </body>
 </html>
